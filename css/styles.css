@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=Spartan:wght@400;700&display=swap');
 
 body {
+  background-color: white;
   color: #333333;
   font-size: 16px;
   height: 100vh;
@@ -58,7 +59,7 @@ p{
 }
 
 #content a:not(.social-link) {
-  border-bottom: 0.5px solid #33333381;
+  border-bottom: 0.5px solid #33333351;
   color: inherit !important;
   text-decoration: none;
 }
@@ -84,6 +85,7 @@ p{
   justify-content: center;
   margin: 0 16px 0 0;
 }
+
 .social-links a.social-link:hover {
   color: #333333;
 }
@@ -93,6 +95,7 @@ p{
     flex-direction: column;
     height: auto;
   }
+
   .column {
     overflow: revert;
   }
