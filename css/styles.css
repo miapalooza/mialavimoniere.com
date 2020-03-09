@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=Spartan:wght@400;700&display=swap');
+
+body {
+  color: #333333;
+  font-size: 16px;
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.column {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+}
+
+#photo {
+  object-fit: cover;
+  width: 50vw;
+} 
+
+#content {
+  margin: auto;
+  padding: 60px;
+  width: 500px;
+}
+
+h1, h2 {
+  font-family: 'Futura PT', 'Spartan', sans-serif;
+  text-transform: uppercase;
+  transform: scaleY(0.9);
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  line-height: 48px;
+  margin: 0 0 22px 0;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 36px 0;
+}
+
+p{
+  font-family: 'IBM Plex Mono', monospace;
+  line-height: 25.5px;
+  margin: 0 0 16px 0;
+}
+
+#content a:not(.social-link) {
+  border-bottom: 0.5px solid #33333381;
+  color: inherit !important;
+  text-decoration: none;
+}
+
+#content a:not(.social-link):hover, #content a:not(.social-link):focus {
+  border-bottom: 0.5px solid #333333;
+}
+
+.social-links {
+  font-size: 0;
+  margin-top: 44px;
+}
+
+.social-links:hover {
+  color: #33333381;
+}
+
+.social-links a.social-link {
+  align-items: center;
+  color: inherit;
+  display: inline-flex;
+  font-size: 24px;
+  justify-content: center;
+  margin: 0 16px 0 0;
+}
+.social-links a.social-link:hover {
+  color: #333333;
+}
+
+@media (max-width: 1020px) {
+  #root {
+    flex-direction: column;
+    height: auto;
+  }
+  .column {
+    overflow: revert;
+  }
+
+  #photo {
+    height: 50vh;
+    width: 100%;
+  }
+
+  #content {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  #content {
+    width: 100%;
+  }
+}
