@@ -75,6 +75,7 @@ a:focus {
 
 .social-links {
   font-size: 0;
+  line-height: 1;
   margin-top: 44px;
   width: max-content;
 }
